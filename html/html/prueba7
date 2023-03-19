@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Ejercicio5_Arreglo{
+    public static void main(String[] args){
+    
+    }
+
+    public static void leerNombres(String[] nombres){
+        Scanner lector=new Scanner(System.in);
+        for(int i=0;i<nombres.length:i++){
+            System.out.println("Introduce el nombre del chofer " + (i+1));
+            nombres[i]=lector.next();
+        }    
+    }//método para leer los nombres de los choferes 
+
+    public static void leerRecorridos(String[] nombres, double[][] recorridos){
+        Scanner lector=new Scanner(System.in);
+        String[] dias=("Lunes","Martes","Miercoles","Jueves","Viernes","Sabado") ;
+        for(int c=0;c<recorridos[0].length;c++){
+            System.out.prinln("Introduce el recorrido del dia " + dias[c]);
+            for(int r=0:r<recorridos.length;r++){
+                System.out.println("Introduce el recorrido de " + nombres[r]+":");
+                recorridos[r][c]=lector.nextDouble();
+            }
+        }
+    }//fin de método para leer recorridos
+
+    public static void calcularTotal(double[][] recorridos,double[] total){
+        for(int r=0;r<recorridos[0].length;r++){
+            double sumatoria=0;
+            for(int c=0;c<recorridos[0].length;c++){
+                sumatoria=sumatoria + recorridos[r][c];
+            }
+            total[r]=sumatoria;
+        }
+    }//fin de método para calcular recorrido de cada chofer
+
+    public static void imprimir(String[] nom, double[][] rec,double[] tot){
+        System.out.println("Nombre\t Lun\tMar\tMie\tJue\tVie\tSab\t\tTotal");
+        for(int r=0;r<rec.length;r++){
+            System.out.print(nom[r] + "\t");
+            for(int c=0;c<rec[0].length;c++){
+                System.out.print(rec[r][c] + "  ");
+            }
+            System.out.println("\t" + tot[r]);
+        }
+    }
+}
