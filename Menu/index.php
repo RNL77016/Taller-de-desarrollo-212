@@ -4,7 +4,7 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>MENU DE PIZZAS</title>
+ <title>MENU TIENDA NUBE</title>
  <!-- BootStrap -->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
  
@@ -12,7 +12,7 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  <style>
  i {
- color : green;
+ color : black;
  font-size: 35px;
  padding: 20px;
  }
@@ -23,7 +23,7 @@
  <nav class="navbar navbar-expand-lg bg-body-tertiary">
  <div class="container-fluid">
  <a class="navbar-brand" href="#">
- <i class="fa-solid fa-rocket"></i> MENU DE PIZZAS
+ <i class="fa-solid fa-cloud"></i> NUBE STORE
  </a>
  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
  <span class="navbar-toggler-icon"></span>
@@ -34,23 +34,13 @@
  <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> INICIO</a>
  </li>
  <li class="nav-item">
- <a class="nav-link" href="#"><i class="fa-solid fa-location-dot"></i> SUCURSALES</a>
+ <a class="nav-link" href="#"><i class="fa-solid fa-location-dot"></i> ENVIOS</a>
  </li>
- <li class="nav-item dropdown">
- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <i class="fa-solid fa-clipboard-list"></i> PLATILLOS
- </a>
- <ul class="dropdown-menu">
- <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pizza-slice"></i> PIZZAS</a></li>
- 
- <li><a class="dropdown-item" href="#"><i class="fa-solid fa-utensils"></i> PASTAS</a></li>
- 
- <li><a class="dropdown-item" href="#"><i class="fa-solid fa-burger"></i> HAMBURGUESAS</a></li>
- 
- <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-group"></i> PAPAS</a></li>
- </ul>
+ <li class="nav-item">
+ <a class="nav-link" href="#" role="button"><i class="fa-solid fa-clipboard-list"></i> PRODUCTOS</a>
  </li>
- 
+
+
  </ul>
  
  </div>

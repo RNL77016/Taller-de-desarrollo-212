@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos/style.css">
+    <title>CATALAGO DE PRODUCTOS</title>
+</head>
+<body>
+    <h1 class="title">VAPES</h1>
+
+    <div class="container">
+        <?php
+          include(conexion.php);
+          $query = "SELECT * FROM Productos";
+          $resultado = $conexion->query($query);
+          while ($row = $resultado->fetch_assoc()) {
+            ?>
+
+            <div class="card">
+                <img src="data.image/jpg;base64, <?php echo base64_encode($row["image"]); ?>">
+                <h4><?php echo $row["nombre"]; ?></h4>
+                <p><?php echo $row["descripcion"]; ?></p>
+                <a href="#">comprar</a>
+            </div>
+        
+        <?php
+        }
+        ?>
+    </div>
+</body>
+</html>
